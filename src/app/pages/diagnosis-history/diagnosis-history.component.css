@@ -1,0 +1,60 @@
+.container {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 15px;
+  margin: 0 15px 15px 15px;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+.blood-pressure {
+  display: flex;
+  flex-direction: row;
+  background-color: #F4F0FE;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.others {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.card>img {
+  height: 90px;
+  width: 96px;
+}
+
+.title {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.parameter {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.lungs {
+  background-color: #E0F3FA;
+}
+
+.temperature {
+  background-color: #FFE6E9;
+}
+
+.heart {
+  background-color: #FFE6F1;
+}

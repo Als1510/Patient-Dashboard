@@ -1,0 +1,12 @@
+<div class="container">
+  <app-sidebar [patients]="patientData" (selectedPatientEvent)="setSelectedPatientData($event)"
+    [selectedPatient]="selectedPatient"></app-sidebar>
+  <div class="center">
+    <app-diagnosis-history [diagnosticHistory]="selectedPatient?.diagnosis_history"></app-diagnosis-history>
+    <app-diagnostic-list [diagnosticList]="selectedPatient?.diagnostic_list"></app-diagnostic-list>
+  </div>
+  <div id="left">
+    <app-profile [profileData]="selectedPatient"></app-profile>
+    <app-lab-results [labResults]="selectedPatient?.lab_results"></app-lab-results>
+  </div>
+</div>

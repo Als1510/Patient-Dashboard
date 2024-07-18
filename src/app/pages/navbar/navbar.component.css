@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 15px;
+}
+
+#center {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 0 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.box img {
+  margin-right: 5px;
+}
+
+.activate {
+  background-color: #01F0D0;
+  border-radius: 25px;
+}
+
+#right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.doctor-image {
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 14px;
+  color: #707070;
+}
+
+#seperator {
+  margin-left: 15px;
+  border: 1px solid #707070;
+  height: 30px;
+}
+
+.icon {
+  margin: 0 15px;
+}

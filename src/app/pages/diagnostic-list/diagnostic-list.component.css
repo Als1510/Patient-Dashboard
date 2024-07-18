@@ -1,0 +1,44 @@
+.container {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 15px 5px 15px 10px;
+  margin: 15px;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+#table-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+thead>tr>th {
+  background: #F6F7F8;
+  padding: 15px 0;
+  text-align: center;
+}
+
+tbody>tr>td {
+  margin: 15px 0;
+  text-align: center;
+}
+
+tbody>tr {
+  border-bottom: 1px solid #d0cacafc;
+}
+
+tbody>tr:last-child {
+  border: none;
+}

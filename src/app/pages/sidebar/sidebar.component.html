@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="header-search">
+    <h2>Patients</h2>
+    <input type="text" [(ngModel)]="searchTerm" (input)="search()" placeholder="Search...">
+    <img src="../../../assets/search.png" alt="">
+  </div>
+  <div class="patient-lists">
+    <div class="patient" *ngFor="let patient of searchResults" (click)="selectedPatientData(patient)"
+      [ngClass]="{'selected-patient': patient === selectedPatient}">
+      <img [src]="patient?.profile_picture">
+      <div class="details">
+        <span class="name">{{patient?.name}}</span>
+        <span class="gender-age">{{patient?.gender}}, {{patient?.age}}</span>
+      </div>
+    </div>
+  </div>
+</div>

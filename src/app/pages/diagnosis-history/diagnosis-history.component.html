@@ -1,0 +1,38 @@
+<div class="container">
+  <h2>Diagnosis History</h2>
+  <div class="blood-pressure">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div class="others">
+    <div class="card lungs">
+      <img src="../../../assets/lungs.png" alt="">
+      <span class="title">Respiratory Rate</span>
+      <span class="parameter"
+        *ngIf="diagnosticHistory && diagnosticHistory.length > 0">{{diagnosticHistory[diagnosticHistory?.length - 1
+        ]?.respiratory_rate?.value}} bpm</span>
+      <span class="status"
+        *ngIf="diagnosticHistory && diagnosticHistory.length > 0">{{diagnosticHistory[diagnosticHistory?.length - 1
+        ]?.respiratory_rate?.levels}}</span>
+    </div>
+    <div class="card temperature">
+      <img src="../../../assets/thermometer.png" alt="">
+      <span class="title">Temperature</span>
+      <span class="parameter"
+        *ngIf="diagnosticHistory && diagnosticHistory.length > 0">{{diagnosticHistory[diagnosticHistory?.length - 1
+        ]?.temperature?.value}} &deg; F</span>
+      <span class="status"
+        *ngIf="diagnosticHistory && diagnosticHistory.length > 0">{{diagnosticHistory[diagnosticHistory?.length - 1
+        ]?.temperature?.levels}}</span>
+    </div>
+    <div class="card heart">
+      <img src="../../../assets/heart.png" alt="">
+      <span class="title">Heart Rate</span>
+      <span class="parameter"
+        *ngIf="diagnosticHistory && diagnosticHistory.length > 0">{{diagnosticHistory[diagnosticHistory?.length - 1
+        ]?.heart_rate?.value}} bpm</span>
+      <span class="status"
+        *ngIf="diagnosticHistory && diagnosticHistory.length > 0">{{diagnosticHistory[diagnosticHistory?.length - 1
+        ]?.heart_rate?.levels}}</span>
+    </div>
+  </div>
+</div>

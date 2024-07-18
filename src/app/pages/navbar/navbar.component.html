@@ -1,0 +1,25 @@
+<div class="container">
+  <div id="left">
+    <img src="../../../assets/10504e43-d5ae-4fd7-b616-2c74310276da.png">
+  </div>
+  <div id="center">
+    <ng-container *ngFor="let page of pages">
+      <a class="box" [routerLink]="page?.link" routerLinkActive="activate" [routerLinkActiveOptions]="{exact: true}">
+        <img [src]="page.imgURL" alt="">
+        <span>{{page.name}}</span>
+      </a>
+    </ng-container>
+  </div>
+  <div id="right">
+    <div id="profile">
+      <img src="../../../assets/jose-simmsons.png" class="doctor-image" alt="">
+      <div class="details">
+        <span class="name">Dr. Jose Simmons</span>
+        <span class="role">General Practitioner</span>
+      </div>
+    </div>
+    <span id="seperator"></span>
+    <img src="../../../assets/gear.png" alt="" class="icon">
+    <img src="../../../assets/vertical-more.png" alt="" class="icon">
+  </div>
+</div>

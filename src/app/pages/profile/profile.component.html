@@ -1,0 +1,41 @@
+<div class="container">
+  <img class="profile-image" [src]="profileData?.profile_picture" alt="">
+  <p class="name">{{profileData?.name}}</p>
+  <div class="details">
+    <img src="../../../assets/birth.png" alt="">
+    <div class="detail-data">
+      <span class="title">Date Of Birth</span>
+      <div class="data">{{ profileData?.date_of_birth | date:'MMMM d, y' }}</div>
+    </div>
+  </div>
+  <div class="details">
+    <img src="../../../assets/female.png" alt="">
+    <div class="detail-data">
+      <span class="title">Gender</span>
+      <div class="data">{{profileData?.gender}}</div>
+    </div>
+  </div>
+  <div class="details">
+    <img src="../../../assets/phone.png" alt="">
+    <div class="detail-data">
+      <span class="title">Contact Info</span>
+      <div class="data">{{profileData?.phone_number}}</div>
+    </div>
+  </div>
+  <div class="details">
+    <img src="../../../assets/phone.png" alt="">
+    <div class="detail-data">
+      <span class="title">Emergency Contacts</span>
+      <div class="data">{{profileData?.emergency_contact}}</div>
+    </div>
+  </div>
+  <div class="details">
+    <img src="../../../assets/insurance.png" alt="">
+    <div class="detail-data">
+      <span class="title">Insurance Provider</span>
+      <div class="data">{{profileData?.insurance_type}}</div>
+    </div>
+  </div>
+
+  <button class="information-button">Show All Information</button>
+</div>
