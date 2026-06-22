@@ -31,7 +31,7 @@ input {
 }
 
 .patient-lists {
-  max-height: 1060px;
+  max-height: 950px;
   overflow-y: auto;
 }
 

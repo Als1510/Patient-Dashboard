@@ -1,0 +1,10 @@
+{
+  "/api/patients": {
+    "target": "https://fedskillstest.coalitiontechnologies.workers.dev",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api/patients": ""
+    }
+  }
+}

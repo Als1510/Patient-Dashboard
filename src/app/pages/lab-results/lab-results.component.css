@@ -10,7 +10,7 @@ h2 {
 }
 
 #results {
-  max-height: 500px;
+  max-height: 270px;
   overflow-y: auto;
 }
 
